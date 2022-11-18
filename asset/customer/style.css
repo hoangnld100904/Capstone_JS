@@ -1,0 +1,46 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;}
+
+.modal__control{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0.95;
+    padding: 30px;
+  
+    z-index: 10;
+    overflow: hidden;
+    font-size: 10px;
+    width: 40%;
+}
+
+
+.modal__content{
+    display: none;
+}
+
+.modal__header{
+   position: relative;
+}
+
+.modal__control span:last-of-type{
+    background: transparent;
+    border: 1px solid transparent;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    padding: 10px;
+    display: none;
+}
+
+.modal__control p{
+    text-align: right;
+}
+
+.modal__control img{
+    width: 30%;
+}
+
