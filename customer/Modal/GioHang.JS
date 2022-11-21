@@ -1,0 +1,3 @@
+function GioHang(){
+    this.mangGioHang=[]
+}

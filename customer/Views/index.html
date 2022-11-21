@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">  </head>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../asset/customer/style.css">
     <body>
    <div class="container">
     <form class="form-control">
@@ -30,20 +30,23 @@
     <div class="modal__content">
       <div class="modal__header">
         <h1>Danh Sách Sản phẩm</h1>
-   
       </div>
       <table class="table table-bordered">
         <thead>
-          <th>Hình ảnh</th>
           <th>Tên sản phẩm</th>
-          <th>Số lượng</th>
           <th>Gía</th>
+          <th>Hình ảnh</th>
+          <th>Số lượng</th>
         </thead>
-        <tbody id="tblDanhSachSP">
-          
-        </tbody>
        
+        <tbody id="tblDanhSachSP">
+         
+        </tbody>
       </table>
+      <tfoot id="tFoot  ">
+
+      </tfoot>
+     
     </div>
   </div>
     <!-- Optional JavaScript -->
@@ -51,8 +54,12 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+ 
     <script src="../Modal/SanPham.js"></script>
+    <script src="../Modal/Cart.js"></script>
+    <script src="../Controllers/DanhSachGioHang.js"></script>
     <script src="../Services/SanPhamService.js"></script>
+
     <script src="../Controllers/main.js"></script>
   </body>
 </html>
