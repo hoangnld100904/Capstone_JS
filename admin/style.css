@@ -7,48 +7,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.add button{
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: .5s;
-    background-size: 200% auto;
-    color: #fff;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-    background-image: linear-gradient(to right, #36D1DC 0%, #5B86E5 51%, #36D1DC 100%);
-    color: black;
-    font-weight: 800;
-    outline: none;
-}
-
-.add button:hover{
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
-}
-
-#exampleModal .modal-body, #exampleModal .modal-header, #exampleModal .modal-footer {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
-}
-
-#exampleModal .input-group-text{
-        /* margin: 10px; */
-    /* padding: 15px 45px; */
-    text-align: center;
-    text-transform: uppercase;
-    transition: .5s;
-    background-size: 200% auto;
-    color: #fff;
-    box-shadow: 0 0 20px #eee;
-    /* border-radius: 10px; */
-    display: block;
-    background-image: linear-gradient(to right, #E0EAFC 0%, #CFDEF3 51%, #E0EAFC 100%);
-    color: black;
-}
-
 .modal-dialog{
     max-width: 1140px;
 }
@@ -60,3 +18,7 @@ body{
 .List__ProDuct th, .List__ProDuct td{
 text-align: center;
 }
+
+/* #nameProduct1,#nameProduct2,#nameProduct3{
+    flex: 1;
+} */

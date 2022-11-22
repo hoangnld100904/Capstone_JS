@@ -19,8 +19,7 @@
 </head>
 
 
-<body style="background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
-">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg container shadow-lg p-3 mb-5 bg-white rounded" ; ">
             <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
@@ -32,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link">Trang chủ</a>
+                        <a class="nav-link" href="../../index.html">Trang chủ</a>
                     </li>
                 </ul>
             </div>
@@ -56,68 +55,55 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="row">
-                            <div class="input-group mb-3 col-6">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">Tên sản phẩm</span>
+                        <form>
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <label for="exampleInputEmail1">Tên sản phẩm</label>
+                                    <input type="text" class="form-control" id="inpName">
+                                    <div class="invalid-feedback valid1"></div>
                                 </div>
-                                <input type="text" class="form-control" id="inpName" aria-label="Sizing example input">
-                            </div>
-                            <div class="input-group mb-3 col-6">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">Giá tiền</span>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputPassword1">Giá tiền</label>
+                                    <input type="text" class="form-control" id="inpPrice">
+                                    <div class="invalid-feedback valid2"></div>
                                 </div>
-                                <input type="text" class="form-control" id="inpPrice" aria-label="Sizing example input">
-                            </div>
-                            <div class="input-group mb-3 col-6">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">Tỉ lệ màn hình</span>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputPassword1">Tỉ lệ màn hình</label>
+                                    <input type="text" class="form-control" id="inpScreen">
+                                    <div class="invalid-feedback valid3"></div>
                                 </div>
-                                <input type="text" class="form-control" id="inpScreen"
-                                    aria-label="Sizing example input">
-                            </div>
-                            <div class="input-group mb-3 col-6">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">Độ phân giải camera
-                                        trước</span>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputPassword1">Độ phân giải camera trước</label>
+                                    <input type="text" class="form-control" id="inpFrontCam">
+                                    <div class="invalid-feedback valid4"></div>
                                 </div>
-                                <input type="text" class="form-control" id="inpFrontCam"
-                                    aria-label="Sizing example input">
-                            </div>
-                            <div class="input-group mb-3 col-6">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-default">Độ phân giải camera
-                                        sau</span>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputPassword1">Độ phân giải camera sau</label>
+                                    <input type="text" class="form-control" id="inpBackCam">
+                                    <div class="invalid-feedback valid5"></div>
                                 </div>
-                                <input type="text" class="form-control" id="inpBackCam"
-                                    aria-label="Sizing example input">
-                            </div>
-                            <div class="input-group mb-3 col-6">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-default">Hình ảnh</span>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputPassword1">Hình ảnh</label>
+                                    <input type="text" class="form-control" id="inpImg">
+                                    <div class="invalid-feedback valid6"></div>
                                 </div>
-                                <input type="text" class="form-control" id="inpImg" aria-label="Sizing example input">
-                            </div>
-                            <div class="input-group mb-3 col-6">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text d-flex">Mô tả sản phẩm</span>
+                                <div class="form-group col-6">
+                                    <label for="exampleInputPassword1">Mô tả sản phẩm</label>
+                                    <input type="text" class="form-control" id="inpDesc">
+                                    <div class="invalid-feedback valid7"></div>
                                 </div>
-                                <textarea class="form-control" id="inpDesc" aria-label="With textarea"></textarea>
-                            </div>
-                            <div class="input-group mb-3 col-6">
-                                <div class="input-group-prepend">
-                                    <label class="input-group-text d-flex" for="inputGroupSelect01">Options</label>
-                                    <select class="custom-select h-100" id="inpType">
-                                        <!-- cho bằng selected để dễ so sánh value -->
+                                <div class="form-group col-6">
+                                    <label for="exampleInputPassword1">Loại sản phẩm</label>
+                                    <select class="custom-select" id="inpType">
                                         <option selected>Loại sản phẩm</option>
                                         <option value="iphone">IPHONE</option>
                                         <option value="samsung">SAMSUNG</option>
                                     </select>
+                                    <div class="invalid-feedback valid8"></div>
                                 </div>
 
                             </div>
-
-                        </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
@@ -129,25 +115,27 @@
     </section>
 
     <section class="List__ProDuct">
-        <div class="container p-0">
+        <div class="container">
             <table class="table">
                 <thead>
-                    <th>STT</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Giá tiền</th>
-                    <th>Hình ảnh</th>
-                    <th>Mô tả</th>
-                    <th>Action</th>
+                    <th scope="col">STT</th>
+                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">Giá tiền</th>
+                    <th scope="col">Hình ảnh</th>
+                    <th scope="col">Mô tả</th>
+                    <th scope="col">Action</th>
                 </thead>
-                
-        <tbody id="tblDanhSachSP">
-       
-        </tbody>
+
+                <tbody id="tblDanhSachSP">
+
+                </tbody>
             </table>
         </div>
     </section>
-  <section>
-    <!-- <div class="spinner-border text-primary" role="status">
+    <section>
+
+
+        <!-- <div class="spinner-border text-primary" role="status">
         <span class="sr-only"></span>
 
       </div>
@@ -155,7 +143,7 @@
     <p>load dữ liệu</p>
  </div> -->
 
-  </section>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
@@ -165,6 +153,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="../Service/SanPhamService.js"></script>
     <script src="../Modal/SanPham.js"></script>
+    <script src="../Controllers/Validation.js"></script>
 
     <script src="../Controllers/main.js"></script>
 </body>

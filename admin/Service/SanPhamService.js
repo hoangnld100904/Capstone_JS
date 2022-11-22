@@ -29,7 +29,7 @@ function SanPhamService() {
 
         this.capNhatSP = function (spCapNhat,id) {
             return axios({
-                method: 'post',
+                method: 'put',
                 url: `https://637369d1348e9472990bbe3b.mockapi.io/Product/${id}`,
                 data: spCapNhat,
             });
