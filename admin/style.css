@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-dialog{
+    max-width: 1140px;
+}
+
+.List__ProDuct th:nth-child(4){
+    width: 100px
+}
+
+.List__ProDuct th, .List__ProDuct td{
+text-align: center;
+}
+
+/* #nameProduct1,#nameProduct2,#nameProduct3{
+    flex: 1;
+} */
