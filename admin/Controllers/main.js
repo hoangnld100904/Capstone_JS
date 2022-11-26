@@ -1,11 +1,12 @@
-let spService = new SanPhamService()
-let validation = new Validation()
+const spService = new SanPhamService()
+const validation = new Validation()
 
 function clearNotif(idMess, idInp) {
     getMyEle(idMess).style.display = 'none'
     getMyEle(idInp).style = ''
     getMyEle(idInp).value = ''
 }
+
 
 getMyEle('#openProduct').onclick = function () {
     clearNotif('.valid1','#inpName')
@@ -47,6 +48,7 @@ function themSanPham() {//name,price,screen,backCamera,frontCamera,img,desc,type
     let isSuccess = isValid(name,price,screen,backCamera,frontCamera,img,desc,type,getIndex)
     if (isSuccess) {
         spService.themSP(sp).then(function (result) {
+            
             getMyEle('.modal-header .close').click()
             layDanhSachSP()
         })
