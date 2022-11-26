@@ -32,18 +32,19 @@ layDanhSach()
 function hienThiDS(mangSP) {
     var content = ''
     mangSP.map(function (sp) {
-        content += `<div class="col-xl-3 col-lg-3 col-md-6 col-12">
-        <div class="card">
+        content += `<div class="item-card">
         <img src="${sp.img}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${sp.name}</h5>
           <p class="card-text">${sp.desc}</p>
+        </div>
+        <div class="card-bottom">
           <a class="btn btn-primary" onclick="themGioHang(${sp.id})">Thêm vào giỏ hàng</a>
         </div>
-      </div></div>`
+        </div>`
     })
 
-    getMyEle('.container .row').innerHTML = content;
+    getMyEle('div.cards').innerHTML = content;
 }
 
 function locSanPham() {
@@ -145,7 +146,7 @@ document.querySelector('.form-control p').onclick = function () {
     document.querySelector('.modal__control p').style = 'text-align:left'
 }
 
-document.querySelector(' .modal__control .close').onclick = function () {
+document.querySelector(' .modal__control span.close').onclick = function () {
     document.querySelector(' .modal__content').style.display = 'none'
     document.querySelector(' .modal__control').style = ''
     document.querySelector(' .modal__control').style = ''
