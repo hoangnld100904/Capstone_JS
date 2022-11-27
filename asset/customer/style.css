@@ -85,10 +85,16 @@
 
 }
 
-div.cart_open {
+div.cart_open{
     display: inline-block;
-}
 
+}
+div.cart_open a{
+    text-decoration: none;
+    color:white;
+    vertical-align: middle;
+
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -129,7 +135,10 @@ div.cart_open {
         padding: 12px 10px;
         width: calc(100%/2 - 20px);
     }
+    .header{
+        padding: 0;
+    }
     .header > div{
-        margin: 0 10px;
+        margin: 0;
     }
 }
