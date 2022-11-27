@@ -3,9 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-.header{
-    
-}
+
+
 .modal__control {
     height: 100%;
     opacity: 1;
@@ -93,6 +92,10 @@ div.cart_open {
 .header {
     display: flex;
     justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 1px solid #dfdfdf;
+    align-items: center;
 }
 .header > div{
     margin: 0 20px;
