@@ -139,7 +139,7 @@ div.admin a{
         height: 80px!important;
     }
 }
-@media (max-width: 738px) {
+@media (max-width: 765px) {
     .item-card {
         margin-left: 10px;
         margin-right: 10px;
