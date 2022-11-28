@@ -26,7 +26,6 @@ function layDanhSach() {
         })
 }
 
-layDanhSach()
 
 function hienThiDS(mangSP) {
     var content = ''

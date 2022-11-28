@@ -126,6 +126,13 @@ div.cart_open a{
     .header > div{
         margin: 0 15px;
     }
+    .modal__control{
+        padding:10px;
+    }
+    .modal__control img{
+        width: 80px!important;
+        height: 80px!important;
+    }
 }
 @media (max-width: 601px) {
     .item-card {
@@ -140,5 +147,13 @@ div.cart_open a{
     }
     .header > div{
         margin: 0;
+    }
+    .modal__control{
+        padding:0;
+        height:auto;
+    }
+    .modal__control img{
+        width: 60px;
+        height: 60px!important;
     }
 }

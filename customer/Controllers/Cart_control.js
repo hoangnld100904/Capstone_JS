@@ -1,6 +1,5 @@
 getLocal()
 
-
 function renderCart(mang) {
     var content = ''
     var tongTien = 0
