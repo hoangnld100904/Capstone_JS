@@ -159,5 +159,7 @@ div.admin a{
         width: 60px;
         height: 60px!important;
     }
-   
+   .container{
+    width: 100% !important;
+   }
 }
