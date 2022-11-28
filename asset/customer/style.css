@@ -150,9 +150,7 @@ div.admin a{
     .header{
         padding: 0;
     }
-    .header > div{
-        margin: 0;
-    }
+   
     .modal__control{
         padding:0;
         height:auto;
@@ -160,5 +158,8 @@ div.admin a{
     .modal__control img{
         width: 60px;
         height: 60px!important;
+    }
+    .cart_open{
+        margin-left: 20px;
     }
 }
