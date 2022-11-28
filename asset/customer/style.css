@@ -160,6 +160,11 @@ div.admin a{
         height: 60px!important;
     }
    .container{
-    width: 100% !important;
+    max-width: 100% !important;
    }
+}
+@media (max-width:600px){
+    .container{
+        width: 100%!important;
+    }
 }
