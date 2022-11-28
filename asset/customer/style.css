@@ -95,9 +95,14 @@ div.cart_open a{
     vertical-align: middle;
 
 }
+
+div.admin a{
+    text-decoration: none;
+    color:white;
+}
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px 20px;
     font-size: 18px;
     border: 1px solid #dfdfdf;
